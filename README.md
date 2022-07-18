@@ -1,6 +1,6 @@
-#Output of the project:
+# Output of the project:
 
-<img src = "screenshot1.png">
+<img src = "./screenshot1.png">
 
 # Getting Started with Create React App
 
