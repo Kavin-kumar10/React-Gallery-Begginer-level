@@ -1,6 +1,8 @@
 # Output of the project:
-
-<img src = "public/screenshot1.png" width = "250px" height = "120px">
+<div style = "display:flex,justify-content:center">
+<img src = "public/screenshot1.png" width = "500px" height = "250px">
+<img src = "public/screenshot2.png" width = "500px" height = "250px">
+</div>  
 
 # Getting Started with Create React App
 
