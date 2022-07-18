@@ -1,6 +1,6 @@
 # Output of the project:
 
-<img src = "./screenshot1.png">
+<img src = "public/screenshot1.png" width = "250px" height = "120px">
 
 # Getting Started with Create React App
 
