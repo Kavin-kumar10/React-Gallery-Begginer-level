@@ -1,0 +1,151 @@
+body{
+  /* background-color:rgba(225, 225, 225,0.8); */
+  background-image:url("../public/my\ pics/background3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+
+.App{
+  text-align: center;
+}
+
+
+/* headers */
+
+.header{
+      height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+#head{
+  background:linear-gradient(black,orangered,white);
+  font-size: 50px;
+  letter-spacing: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span{
+  font-size: 200px;
+}
+
+
+
+/* photo-container */
+
+.photo-contain {
+  column-count: 3;
+  background: linear-gradient(transparent,black,black);
+  column-width: 33%;
+}
+.photo-contain img{
+  width: 100%;
+  border-radius: 125px;
+  cursor: pointer;
+  transition:0.3s ease-in-out;
+  padding: 5px;
+}
+
+.photo-contain img:hover{
+    border-radius: 0px;
+}
+
+
+
+
+/* filtering */
+
+.filter{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+}
+.filter ul{
+  color: black;
+}
+#filter ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#filter ul li{
+  list-style: none;
+  font-size: 25px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  padding: 10px 50px;
+}
+#filter ul li:hover{
+  opacity: 1;
+  transform: scale(1.2);
+  text-shadow: 0 0 40px white;
+
+}
+#filter ul li:active{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.scrolling-active{
+  background:linear-gradient(black,transparent,black);
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.scrolling-active ul{
+  color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:995px) {
+  .photo-contain {
+    column-count: 2;
+    column-width: 47%;
+    margin:12px
+  }
+  #head{
+    font-size: 40px;
+  }
+  span{
+    font-size: 100px;
+  }
+  .filter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:black;
+  }
+}
+@media (max-width:500px) {
+  .photo-contain {
+    column-count: 1;
+    column-width: 100%;
+    margin: 20px;
+  }
+  #head{
+    font-size: 25px;
+  }
+  span{
+    font-size: 80px;
+  }
+  .filter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+  }
+}
